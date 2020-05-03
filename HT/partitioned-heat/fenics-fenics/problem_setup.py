@@ -103,7 +103,7 @@ def get_problem_setup(args):
 
 def get_geometry(domain_part):
     nx = 5
-    ny = 10
+    ny = 5
     low_resolution = 5
     high_resolution = 5
     n_vertices = 20
@@ -111,7 +111,7 @@ def get_geometry(domain_part):
     if domain_part is DomainPart.LEFT:
         nx = nx*3
     elif domain_part is DomainPart.RIGHT:
-        ny = ny*2
+        ny = ny
     elif domain_part is DomainPart.CIRCULAR:
         n_vertices = n_vertices
     elif domain_part is DomainPart.RECTANGLE:
